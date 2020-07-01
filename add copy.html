@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>這是一個git的練習</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+          if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+            $('#ios-notice').removeClass('hidden');
+            $('.parallax-container').height($(window).height() * 0.5 | 0);
+          } else {
+            $(window).resize(function () {
+              var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+              $('.parallax-container').height(parallaxHeight);
+            }).trigger('resize');
+          }
+        });
+      </script>
+      <script src="../dist/jquery.parallax.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Parallax Scrolling</h1>
+    </header>
+
+    <main class="scrollingElement">
+        <div class="main_content">
+            <section class="section_view part1">
+                <h2>part 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam at, hic provident adipisci esse, laudantium, nihil eveniet corrupti maxime consequatur praesentium? Aliquid iusto voluptatibus ab doloribus eligendi iste! Maxime, officia.</p>
+            </section>
+
+            <div class="parallax-container" data-parallax data-mirror-selector=".mirrorContainer"
+         data-scrolling-selector=".scrollingElement" data-position="top" data-bleed="10">
+       
+            <div class="h1_back">back</div></div>
+
+       
+
+            <section class="section_view part2">
+                <h2>part 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam at, hic provident adipisci esse, laudantium, nihil eveniet corrupti maxime consequatur praesentium? Aliquid iusto voluptatibus ab doloribus eligendi iste! Maxime, officia.</p>
+            
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, iusto sunt. Obcaecati laudantium dolorum eaque, voluptatum, fugiat magnam, distinctio veniam quam laboriosam modi error tempore quasi omnis quas totam deleniti id fugit quod nisi ex iusto aspernatur nostrum quia. Repudiandae ipsa dolor sapiente accusamus soluta voluptatem dolorum accusantium doloremque laudantium atque blanditiis enim suscipit quos eveniet ex nisi architecto laboriosam aliquid, illum vero. Atque repudiandae laudantium, doloremque aliquam nemo aut facere tempora ratione suscipit quod id ut expedita sequi quo! Accusamus, iusto magnam nemo nulla placeat quas repellendus laboriosam similique ducimus id atque labore minus rem ut tenetur eaque delectus amet asperiores! Accusantium impedit reprehenderit facere dolores earum excepturi voluptatum, repudiandae recusandae ad dolorem perferendis labore ipsa unde repellat iste aliquam quod cupiditate, cumque eos rerum iure. Cumque possimus saepe, voluptas et maiores eaque doloribus minus aut delectus provident ea optio laudantium vitae assumenda praesentium illo reiciendis eligendi tempore libero. Atque incidunt, asperiores quae earum dolores nam nesciunt id explicabo iste saepe et illo numquam tempore iusto eius aliquid eaque illum non nihil. Nemo quasi fuga beatae, incidunt in quis itaque doloribus nesciunt atque. Voluptatum, natus, pariatur ducimus qui omnis dicta minima at ad atque illum quam culpa. Minus, illo.</p>
+            </section>
+
+            <div class="parallax-container" data-parallax data-mirror-selector=".mirrorContainer"
+            data-scrolling-selector=".scrollingElement" data-bleed="10" data-speed="0.2"
+            data-src="images/helix-nebula-1400x1400.jpg" style="height: 655px;"></div>
+
+            <section class="section_view part3">
+                <h2>part 3</h2>
+                <p>praesentium? Aliquid iusto voluptatibus ab doloribus eligendi iste! Maxime, officia.</p>
+            </section>
+
+           
+
+        </div>
+        
+    </main>
+</body>
+
+
+</html>

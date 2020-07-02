@@ -1,0 +1,51 @@
+body {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.scrollingElement {
+    overflow: scroll;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+
+.section_view{
+    padding: 5vh;
+}
+.part1{
+    background-color: seagreen;
+    margin-bottom: 30vh;
+}
+
+.part2{
+    background-color: rgb(37, 158, 142);
+    margin-bottom: 40vh;
+
+}
+.part3{
+    background-color: rgb(139, 46, 77);
+    margin-bottom: 30vh;
+
+}
+.part4{
+    background-color: rgb(46, 52, 139);
+    margin-bottom: 30vh;
+
+}
+.h1_back{
+    font-size: 60vw;
+}
+.section_back{
+    position: absolute;
+    top: 10vh;
+    z-index: -10;
+}

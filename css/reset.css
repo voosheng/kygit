@@ -31,9 +31,13 @@ body {
     margin-bottom: 40vh;
 
 }
-
 .part3{
     background-color: rgb(139, 46, 77);
+    margin-bottom: 30vh;
+
+}
+.part4{
+    background-color: rgb(46, 52, 139);
     margin-bottom: 30vh;
 
 }
